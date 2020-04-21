@@ -1,0 +1,13 @@
+CREATE TABLE passport(
+  id CHAR(11) PRIMARY KEY,
+	name VARCHAR(20),
+	car_number VARCHAR(10),
+	address VARCHAR(50),
+	reg_date TIMESTAMP,
+	audit VARCHAR(10) DEFAULT '审核中'
+);
+
+INSERT INTO passport
+VALUES('13900000001','tom','辽B00001','高新园区河口软件园001',NOW(),'审核中')
+
+select * from passport
